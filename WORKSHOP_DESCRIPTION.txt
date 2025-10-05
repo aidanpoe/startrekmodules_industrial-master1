@@ -1,0 +1,177 @@
+[h1]Star Trek Modules - Industrial Replicator[/h1]
+
+[b]A powerful industrial-scale replicator system with LCARS interface for your Star Trek server![/b]
+
+[hr][/hr]
+
+[h2]📋 Description[/h2]
+
+The Industrial Replicator is an advanced addon for Star Trek Modules that provides a spawnable entity capable of replicating a wide variety of props, equipment, and supplies. Perfect for outfitting your starship, station, or away team with essential gear!
+
+Unlike standard replicators, the Industrial Replicator features a fixed output location, making it ideal for automated supply chains and organized cargo operations.
+
+[hr][/hr]
+
+[h2]✨ Features[/h2]
+
+[list]
+[*] [b]Full LCARS Interface[/b] - Authentic Star Trek-styled interface that spawns on a plate model
+[*] [b]Fixed Replication Point[/b] - All items materialize at a preset location for organized logistics
+[*] [b]10-Second Cooldown[/b] - Prevents spam and adds realism to replication operations
+[*] [b]22 Replicatable Items[/b] - Organized into 6 categories for easy access
+[*] [b]Cooldown Feedback[/b] - Visual display shows remaining cooldown time
+[*] [b]Fully Integrated[/b] - Works seamlessly with Star Trek Modules framework
+[/list]
+
+[hr][/hr]
+
+[h2]📦 Available Items[/h2]
+
+[h3]🪑 FURNITURE (4 items)[/h3]
+[list]
+[*] Office Chair
+[*] Comfort Chair
+[*] Small Table
+[*] Large Table
+[/list]
+
+[h3]🖥️ EQUIPMENT (4 items)[/h3]
+[list]
+[*] Universal Console
+[*] Jef Door Hatch
+[*] Single Door
+[*] Double Door
+[/list]
+
+[h3]📦 CARGO (7 items)[/h3]
+[list]
+[*] Security Supplies
+[*] Medical and Science Supplies
+[*] Engineering Supplies
+[*] Warp Plasma (Barrel)
+[*] Misc Container
+[*] Smaller Misc Container
+[*] Warp Plasma Premium
+[/list]
+
+[h3]⚕️ MEDICAL (2 items)[/h3]
+[list]
+[*] Sickbay Device Storage
+[*] Med Kit
+[/list]
+
+[h3]🔧 TOOLS (1 item)[/h3]
+[list]
+[*] Extinguisher (Weapon)
+[/list]
+
+[h3]🎯 MISC (4 items)[/h3]
+[list]
+[*] Toy Serenity
+[*] LCARS Laptop
+[*] Stem Bolt
+[/list]
+
+[hr][/hr]
+
+[h2]🎮 How to Use[/h2]
+
+[olist]
+[*] Spawn the [b]Industrial Replicator[/b] entity from the Star Trek category in your spawn menu
+[*] Position it where you want the control panel to be
+[*] Press [b]E (Use)[/b] on the entity to open the LCARS interface
+[*] Select a category from the menu
+[*] Choose an item to replicate
+[*] The item will materialize at the fixed replication coordinates
+[*] Wait 10 seconds before replicating the next item
+[/olist]
+
+[hr][/hr]
+
+[h2]⚙️ Configuration[/h2]
+
+The replication coordinates are set to:
+[code]
+Position: x=291.29, y=61.04, z=11714.17
+Angle: p=0.02, y=179.99, r=-0.00
+[/code]
+
+[i]Note: These coordinates can be modified in the entity's init.lua file if needed for your specific map layout.[/i]
+
+[hr][/hr]
+
+[h2]📋 Requirements[/h2]
+
+This addon requires the following to function:
+[list]
+[*] [b]Star Trek Modules (Base)[/b] - Core framework
+[*] [b]Star Trek LCARS[/b] - Interface system
+[*] [b]Star Trek Replicator[/b] - Replication functionality
+[*] [b]Star Trek Utilities[/b] - Helper functions
+[/list]
+
+[b]Make sure all dependencies are installed and loaded before this addon![/b]
+
+[hr][/hr]
+
+[h2]🛠️ Installation[/h2]
+
+[olist]
+[*] Subscribe to this addon on the Steam Workshop
+[*] Subscribe to all required Star Trek Modules dependencies
+[*] Restart your server or type [b]lua_refresh[/b] in console
+[*] The Industrial Replicator will appear in your spawn menu under "Star Trek"
+[/olist]
+
+[hr][/hr]
+
+[h2]💡 Tips & Tricks[/h2]
+
+[list]
+[*] Place the replicator near your cargo bay or storage area
+[*] The 10-second cooldown prevents accidental spam clicks
+[*] Items spawn with transporter effects for authenticity
+[*] Replicated items are marked and can be detected by tricorders
+[*] Works great for roleplay scenarios and server economies
+[/list]
+
+[hr][/hr]
+
+[h2]🐛 Known Issues[/h2]
+
+[list]
+[*] Replication coordinates are currently hardcoded - modify in entity files if needed
+[*] Some models may require specific content packs installed on your server
+[/list]
+
+[hr][/hr]
+
+[h2]📝 Credits[/h2]
+
+[list]
+[*] Created following the Star Trek Modules framework by [b]Jan 'Oninoni' Ziegler[/b]
+[*] Compatible with Star Trek Modules ecosystem
+[*] Uses LCARS interface standards
+[/list]
+
+[hr][/hr]
+
+[h2]📞 Support[/h2]
+
+If you encounter any issues or have suggestions:
+[list]
+[*] Post in the comments section below
+[*] Join the Star Trek Modules community
+[*] Check that all dependencies are up to date
+[/list]
+
+[hr][/hr]
+
+[h2]⚖️ License[/h2]
+
+This software can be used freely, but only distributed by the original author.
+Copyright © 2022 Jan Ziegler
+
+[hr][/hr]
+
+[b]Enjoy your Industrial Replicator and make it so! 🖖[/b]

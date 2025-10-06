@@ -25,6 +25,12 @@ function SELF:GenerateCategories(ent)
 	local categoryCount = #categories
 
 	table.insert(categories, {
+		Name = "CLEAN",
+		Color = Star_Trek.LCARS.ColorOrange,
+		Buttons = {},
+	})
+
+	table.insert(categories, {
 		Name = "CLOSE",
 		Color = Star_Trek.LCARS.ColorRed,
 		Buttons = {},

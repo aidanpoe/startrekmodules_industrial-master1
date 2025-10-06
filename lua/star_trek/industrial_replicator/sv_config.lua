@@ -37,6 +37,10 @@ Star_Trek.IndustrialReplicator.Categories = {
 				Name = "Large Table",
 				Data = "models/kingpommes/startrek/intrepid/mess_table2.mdl",
 			},
+			{
+				Name = "Guest Bed",
+				Data = "models/props/rooms/doublebeds.mdl",
+			},
 		},
 	},
 	{
@@ -58,6 +62,12 @@ Star_Trek.IndustrialReplicator.Categories = {
 			{
 				Name = "Double Door",
 				Data = "models/kingpommes/startrek/intrepid/door_80.mdl",
+			},
+			{
+				Name = "Ladder",
+				Data = {
+					Class = "ladder_small",
+				},
 			},
 		},
 	},
@@ -93,6 +103,34 @@ Star_Trek.IndustrialReplicator.Categories = {
 				Name = "Warp Plasma Premium",
 				Data = "models/props/cargo/container_warpplasma.mdl",
 			},
+			{
+				Name = "Perishable Case",
+				Data = "models/crazycanadian/star_trek/tools/perishable_case/perishable_case.mdl",
+			},
+			{
+				Name = "Locked Weapons Case",
+				Data = "models/props/cargo/cargo_container_01.mdl",
+			},
+			{
+				Name = "Copper Wire",
+				Data = "models/props/cargo/cargo_large_01.mdl",
+			},
+			{
+				Name = "Food/Drink Rations",
+				Data = "models/props/cargo/cargo_large_02.mdl",
+			},
+			{
+				Name = "Medical Assortment",
+				Data = "models/props/cargo/cargo_medium_03.mdl",
+			},
+			{
+				Name = "Biological Storage",
+				Data = "models/props/cargo/cargo_medium_04.mdl",
+			},
+			{
+				Name = "General Use Container",
+				Data = "models/props/cargo/container_01.mdl",
+			},
 		},
 	},
 	{
@@ -106,6 +144,98 @@ Star_Trek.IndustrialReplicator.Categories = {
 			{
 				Name = "Med Kit",
 				Data = "models/crazycanadian/star_trek/misc/medkit.mdl",
+			},
+			{
+				Name = "Medical Cabinet",
+				Data = "models/props/sickbay/sickbay_cabinet_monitorstand.mdl",
+			},
+			{
+				Name = "Bio Samp Contain",
+				Data = "models/props/sickbay/sickbay_containerset.mdl",
+			},
+			{
+				Name = "Radioactive Storage",
+				Data = "models/props/sickbay/sickbay_largebox.mdl",
+			},
+			{
+				Name = "Microscope",
+				Data = "models/props/sickbay/sickbay_microscope.mdl",
+			},
+			{
+				Name = "Med Bed",
+				Data = "models/props/sickbay/sickbed.mdl",
+			},
+			{
+				Name = "Autosuture",
+				Data = {
+					Class = "autosuture",
+				},
+			},
+			{
+				Name = "Dermal Regenerator",
+				Data = {
+					Class = "dermal_regenerator",
+				},
+			},
+			{
+				Name = "Hypospray",
+				Data = {
+					Class = "hypospray",
+				},
+			},
+			{
+				Name = "Laser Scalpel",
+				Data = {
+					Class = "laser_scalpel",
+				},
+			},
+		},
+	},
+	{
+		Name = "ENG",
+		Disabled = false,
+		Buttons = {
+			{
+				Name = "Hyperspanner",
+				Data = {
+					Class = "hyperspanner",
+				},
+			},
+			{
+				Name = "ODN Scanner",
+				Data = {
+					Class = "odn_scanner",
+				},
+			},
+			{
+				Name = "Sonic Driver",
+				Data = {
+					Class = "sonic_driver",
+				},
+			},
+			{
+				Name = "Object Mover",
+				Data = {
+					Class = "weapon_physcannon",
+				},
+			},
+		},
+	},
+	{
+		Name = "AWAY MISSION",
+		Disabled = false,
+		Buttons = {
+			{
+				Name = "Pattern Enhancer Case",
+				Data = {
+					Class = "pattern_enhancer_case",
+				},
+			},
+			{
+				Name = "Pattern Enhancer",
+				Data = {
+					Class = "pattern_enhancer",
+				},
 			},
 		},
 	},
@@ -136,6 +266,32 @@ Star_Trek.IndustrialReplicator.Categories = {
 			{
 				Name = "Stem Bolt",
 				Data = "models/crazycanadian/star_trek/misc/stem_bolt.mdl",
+			},
+			{
+				Name = "Plaque",
+				Data = "models/kingpommes/startrek/intrepid/dedication_plaque.mdl",
+			},
+			{
+				Name = "Star Fleet Banner",
+				Data = "models/crazycanadian/star_trek/misc/banner.mdl",
+			},
+			{
+				Name = "LCARS Tablet",
+				Data = {
+					Class = "lcars_padd_swep",
+				},
+			},
+			{
+				Name = "Tricorder",
+				Data = {
+					Class = "lcars_tricorder_swep",
+				},
+			},
+			{
+				Name = "Musical Keyboard",
+				Data = {
+					Class = "ent_musical_keyboard",
+				},
 			},
 		},
 	},

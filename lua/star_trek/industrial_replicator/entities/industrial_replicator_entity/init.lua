@@ -22,6 +22,10 @@ AddCSLuaFile("cl_init.lua")
 AddCSLuaFile("shared.lua")
 include("shared.lua")
 
+-- Precache the icon material so it's sent to clients
+resource.AddFile("materials/entities/industrial_replicator_entity_v3.vmt")
+resource.AddFile("materials/entities/industrial_replicator_entity_v3.vtf")
+
 -- Fixed replication position from the request
 ENT.ReplicatePos = Vector(291.29, 61.04, 11714.17)
 ENT.ReplicateAng = Angle(0.02, 179.99, -0.00)

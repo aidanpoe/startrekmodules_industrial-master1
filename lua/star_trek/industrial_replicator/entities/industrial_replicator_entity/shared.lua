@@ -23,6 +23,7 @@ ENT.Base = "base_gmodentity"
 
 ENT.PrintName = "Industrial Replicator"
 ENT.Author = "Oninoni"
+ENT.IconOverride = "entities/industrial_replicator_entity_v3.png"
 
 ENT.Category = "Star Trek"
 

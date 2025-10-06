@@ -80,6 +80,38 @@ function SELF:Open(ent)
 				interfaceData:Close()
 			else
 				if categoryId == categoryCount + 1 then
+					-- Clean/Recycle replicated items
+					local pos = ent.ReplicatePos
+					
+					local targets = ents.FindInSphere(pos, 100)
+					local cleanEntities = {}
+					for _, target in pairs(targets) do
+						if target.Replicated then
+							table.insert(cleanEntities, target)
+						end
+					end
+
+					if #cleanEntities == 0 then
+						if istable(Star_Trek.Logs) then
+							Star_Trek.Logs:AddEntry(ent, ply, "No replicated items found in replication area", Star_Trek.LCARS.ColorOrange)
+						end
+						ent:EmitSound("star_trek.lcars_error")
+					else
+						if istable(Star_Trek.Logs) then
+							Star_Trek.Logs:AddEntry(ent, ply, "Recycling " .. #cleanEntities .. " replicated item(s)")
+						end
+
+						for _, cleanEnt in pairs(cleanEntities) do
+							Star_Trek.Replicator:RecycleObject(cleanEnt)
+						end
+						
+						ent:EmitSound("star_trek.lcars_beep")
+					end
+
+					interfaceData:Close()
+
+					return false
+				elseif categoryId == categoryCount + 2 then
 					windowData:Close()
 
 					return false

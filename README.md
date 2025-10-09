@@ -167,13 +167,7 @@ garrysmod/
 
 ---
 
-## 📚 Documentation
 
-- **[README.md](README.md)** - Quick start guide
-- **[ADDON_DOCUMENTATION.md](ADDON_DOCUMENTATION.md)** - Complete technical guide (500+ lines)
-- **[HOW_IT_WORKS.md](HOW_IT_WORKS.md)** - Detailed system breakdown (900+ lines)
-- **[LATEST_FIX.md](LATEST_FIX.md)** - Changelog and recent updates
-- **[CLEANUP_SUMMARY.md](CLEANUP_SUMMARY.md)** - Code quality report
 
 ---
 

@@ -63,7 +63,17 @@ function SELF:Open(ent)
 					local pos = ent.ReplicatePos
 					local ang = ent.ReplicateAng
 
-					local replicateSuccess, replicateError = Star_Trek.Replicator:CreateObject(buttonData.Data, pos, ang)
+					local replicateSuccess, replicateError
+					
+					-- Check if this is a vehicle format (our special handling)
+					if type(buttonData.Data) == "string" and string.find(buttonData.Data, "^vehicle:") then
+						-- Handle vehicle spawning directly
+						replicateSuccess, replicateError = Star_Trek.IndustrialReplicator:SpawnVehicle(buttonData.Data, pos, ang)
+					else
+						-- Normal replicator handling
+						replicateSuccess, replicateError = Star_Trek.Replicator:CreateObject(buttonData.Data, pos, ang)
+					end
+					
 					if not replicateSuccess then
 						if istable(Star_Trek.Logs) then
 							Star_Trek.Logs:AddEntry(ent, ply, "ERROR: " .. replicateError, Star_Trek.LCARS.ColorRed)

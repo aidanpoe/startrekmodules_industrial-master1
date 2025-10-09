@@ -1,191 +1,370 @@
-[h1]Star Trek Modules - Industrial Replicator[/h1]
+[h1]🖖 Star Trek Modules - Industrial Replicator[/h1]
+[h2]Dark Gold Gaming Enhanced Edition v2.0[/h2]
 
-[b]A powerful industrial-scale replicator system with LCARS interface for your Star Trek server![/b]
+[b]Transform your Star Trek roleplay server with the most advanced replicator system for Garry's Mod! Spawn items, vehicles, weapons, and more through an authentic LCARS interface with complete admin management tools.[/b]
 
-[hr][/hr]
-
-[h2]📋 Description[/h2]
-
-The Industrial Replicator is an advanced addon for Star Trek Modules that provides a spawnable entity capable of replicating a wide variety of props, equipment, and supplies. Perfect for outfitting your starship, station, or away team with essential gear!
-
-Unlike standard replicators, the Industrial Replicator features a fixed output location, making it ideal for automated supply chains and organized cargo operations.
+[b]✨ 50+ Pre-configured Items • Unlimited Custom Items • Vehicle Support • LCARS Interface • Persistent Database ✨[/b]
 
 [hr][/hr]
 
-[h2]✨ Features[/h2]
+[h1]📋 Overview[/h1]
 
-[list]
-[*] [b]Full LCARS Interface[/b] - Authentic Star Trek-styled interface that spawns on a plate model
-[*] [b]Fixed Replication Point[/b] - All items materialize at a preset location for organized logistics
-[*] [b]10-Second Cooldown[/b] - Prevents spam and adds realism to replication operations
-[*] [b]22 Replicatable Items[/b] - Organized into 6 categories for easy access
-[*] [b]Cooldown Feedback[/b] - Visual display shows remaining cooldown time
-[*] [b]Recycling System[/b] - Clean up replicated items with the built-in recycler
-[*] [b]Fully Integrated[/b] - Works seamlessly with Star Trek Modules framework
-[/list]
+The Industrial Replicator is a comprehensive spawn management system disguised as an authentic Star Trek replicator. Players walk up, press E, select an item, and it spawns instantly. Admins can add unlimited custom items, manage categories, hide unwanted items, and browse 200+ GMod vehicles - all through a beautiful LCARS interface.
+
+[b]Perfect for:[/b] Star Trek RP • Sandbox Servers • Build Servers • DarkRP • Military RP • Space RP
 
 [hr][/hr]
 
-[h2]📦 Available Items[/h2]
+[h1]✨ Key Features[/h1]
 
-[h3]🪑 FURNITURE (4 items)[/h3]
+[h2]🎮 For Players[/h2]
 [list]
-[*] Office Chair
-[*] Comfort Chair
-[*] Small Table
-[*] Large Table
+[*] [b]50+ Default Items[/b] - Furniture, equipment, medical supplies, engineering tools, cargo
+[*] [b]8 Categories[/b] - FURNITURE, EQUIPMENT, CARGO, MEDICAL, ENG, AWAY MISSION, TOOLS, MISC
+[*] [b]Beautiful LCARS UI[/b] - Authentic Star Trek computer interface in Dark Gold Gaming theme
+[*] [b]Vehicle Spawning[/b] - Spawn working GMod vehicles directly from replicator
+[*] [b]Easy to Use[/b] - Walk up, press E, select item, spawn! No complicated menus
+[*] [b]Instant Spawning[/b] - Items appear immediately at replicator output location
 [/list]
 
-[h3]🖥️ EQUIPMENT (4 items)[/h3]
+[h2]🔧 For Admins - Advanced Management[/h2]
 [list]
-[*] Universal Console
-[*] Jef Door Hatch
-[*] Single Door
-[*] Double Door
+[*] [b]ADD Panel[/b] - Add unlimited custom items (props, entities, weapons, vehicles, chairs)
+[*] [b]BROWSE Panel[/b] - Browse all 200+ GMod vehicles and chairs, add them instantly with type filter
+[*] [b]REMOVE Panel[/b] - Delete custom items with search functionality
+[*] [b]HIDE/SHOW Panel[/b] - Hide unwanted items without deleting (works on default + custom items!)
+[*] [b]MODIFY Panel[/b] - Edit item names, categories, types after creation
+[*] [b]MANAGE CATEGORIES[/b] - Create unlimited custom categories for organization
 [/list]
 
-[h3]📦 CARGO (7 items)[/h3]
+[h2]💾 Technical Excellence[/h2]
 [list]
-[*] Security Supplies
-[*] Medical and Science Supplies
-[*] Engineering Supplies
-[*] Warp Plasma (Barrel)
-[*] Misc Container
-[*] Smaller Misc Container
-[*] Warp Plasma Premium
-[/list]
-
-[h3]⚕️ MEDICAL (2 items)[/h3]
-[list]
-[*] Sickbay Device Storage
-[*] Med Kit
-[/list]
-
-[h3]🔧 TOOLS (1 item)[/h3]
-[list]
-[*] Extinguisher (Weapon)
-[/list]
-
-[h3]🎯 MISC (4 items)[/h3]
-[list]
-[*] Toy Serenity
-[*] LCARS Laptop
-[*] Stem Bolt
+[*] [b]SQLite Database[/b] - All custom items persist across server restarts
+[*] [b]Auto Vehicle Detection[/b] - Automatically finds all GMod vehicle scripts on your server
+[*] [b]Crash Prevention[/b] - Smart chair detection prevents "invalid wheel attachment" errors
+[*] [b]Network Optimized[/b] - 14 efficient client-server network messages
+[*] [b]Search Functionality[/b] - Find items quickly in all management panels
+[*] [b]Auto-Refresh[/b] - Lists update automatically after changes
+[*] [b]Back Buttons[/b] - Easy navigation between all 6 management panels
 [/list]
 
 [hr][/hr]
 
-[h2]🎮 How to Use[/h2]
+[h1]📦 Default Items (50+)[/h1]
 
-[h3]Replicating Items:[/h3]
+[h3]🪑 FURNITURE (5 items)[/h3]
+Office Chair • Comfort Chair • Small Table • Large Table • Guest Bed
+
+[h3]🖥️ EQUIPMENT (5 items)[/h3]
+Universal Console • Jef Door Hatch • Single Door • Double Door • Ladder
+
+[h3]📦 CARGO (14 items)[/h3]
+Security Supplies • Medical Supplies • Engineering Supplies • Warp Plasma • Various Containers & Cases
+
+[h3]⚕️ MEDICAL (11 items)[/h3]
+Sickbay Storage • Med Kits • Cabinets • Microscope • Med Bed • Medical Tools
+
+[h3]🔧 ENG (4 items)[/h3]
+Hyperspanner • ODN Scanner • Sonic Driver • Object Mover
+
+[h3]🎯 AWAY MISSION (2 items)[/h3]
+Pattern Enhancer Case • Pattern Enhancer
+
+[h3]�️ TOOLS (1 item)[/h3]
+Extinguisher
+
+[h3]� MISC (8 items)[/h3]
+Toy Serenity • LCARS Laptop • Stem Bolt • Plaque • Banner • LCARS Tablet • Tricorder • Musical Keyboard
+
+[hr][/hr]
+
+[h1]🎮 How to Use[/h1]
+
+[h2]For Players - Spawning Items[/h2]
 [olist]
-[*] Spawn the [b]Industrial Replicator[/b] entity from the Star Trek category in your spawn menu
-[*] Position it where you want the control panel to be
-[*] Press [b]E (Use)[/b] on the entity to open the LCARS interface
-[*] Select a category from the menu
-[*] Choose an item to replicate
-[*] The item will materialize at the fixed replication coordinates
-[*] Wait 10 seconds before replicating the next item
+[*] Walk up to Industrial Replicator entity
+[*] Press [b]E[/b] (use key)
+[*] Select category (FURNITURE, EQUIPMENT, etc.)
+[*] Select item from the list
+[*] Item spawns at replicator output location!
 [/olist]
 
-[h3]Recycling Items:[/h3]
+[h2]For Admins - Adding Custom Items[/h2]
+
+[b]Adding a Prop:[/b]
 [olist]
-[*] Place replicated items near the replication point (within 100 units)
-[*] Open the LCARS interface
-[*] Select the [b]CLEAN[/b] category (orange button)
-[*] All replicated items in the area will be recycled and removed
-[*] Only works on items that were replicated (marked items)
+[*] Right-click replicator → "Edit Replicator Items"
+[*] Click "Add New Item"
+[*] Enter model path: [i]models/props_c17/chair02a.mdl[/i]
+[*] Enter display name: "Office Chair"
+[*] Select category: FURNITURE
+[*] Select type: prop
+[*] Click "Add Item" - Done!
+[/olist]
+
+[b]Adding a Vehicle:[/b]
+[olist]
+[*] Right-click replicator → "Edit Replicator Items"
+[*] Click "Browse Vehicles & Chairs"
+[*] Use filter: "Vehicles Only" or "Chairs Only"
+[*] Search for vehicle (e.g., "Jeep")
+[*] Select vehicle from list
+[*] Choose or create category
+[*] Click "Add to Replicator" - Done!
+[/olist]
+
+[b]Hiding Unwanted Items:[/b]
+[olist]
+[*] Right-click replicator → "Edit Replicator Items"
+[*] Click "Hide Item"
+[*] Search for item
+[*] Select item from list (shows Visible or HIDDEN status)
+[*] Click "Hide Selected Item" or "Show Selected Item"
+[*] Item visibility updated instantly!
 [/olist]
 
 [hr][/hr]
 
-[h2]⚙️ Configuration[/h2]
+[h1]🆕 Version 2.0 Updates (October 2025)[/h1]
 
-The replication coordinates are set to:
-[code]
-Position: x=291.29, y=61.04, z=11714.17
-Angle: p=0.02, y=179.99, r=-0.00
-[/code]
+[h2]New Features ✨[/h2]
+[list]
+[*] ✅ Unified vehicle/chair browser with type filter (All/Vehicles/Chairs)
+[*] ✅ Show/Unhide functionality - unhide items without database editing
+[*] ✅ Auto-vehicle detection from GMod scripts on server start
+[*] ✅ Chair crash prevention system (fixes wheel attachment errors)
+[*] ✅ Dynamic button text (Hide/Show based on item state)
+[*] ✅ Status indicators (Visible/HIDDEN) in all lists
+[/list]
 
-[i]Note: These coordinates can be modified in the entity's init.lua file if needed for your specific map layout.[/i]
+[h2]UI/UX Improvements 🎨[/h2]
+[list]
+[*] ✅ Added back buttons to all 6 management panels
+[*] ✅ Fixed text overlap with separator lines
+[*] ✅ Consistent Dark Gold Gaming theme (#D6B140) throughout
+[*] ✅ Auto-refresh after all actions
+[*] ✅ Better error messages and user feedback
+[*] ✅ Improved search functionality
+[/list]
+
+[h2]Bug Fixes 🐛[/h2]
+[list]
+[*] ✅ Fixed "GetNumColumns() error" crashes
+[*] ✅ Fixed "CreateCloseButton error" on panels
+[*] ✅ Fixed missing IRep_Label font errors
+[*] ✅ Fixed "Vehicle has invalid wheel attachment" chair crashes
+[*] ✅ Fixed hideBtn nil reference errors
+[*] ✅ Fixed infoLabel scope issues
+[*] ✅ Fixed HIDE panel not showing hidden items
+[/list]
+
+[h2]Documentation 📚[/h2]
+[list]
+[*] ✅ Complete 500+ line technical guide (ADDON_DOCUMENTATION.md)
+[*] ✅ 900+ line system breakdown (HOW_IT_WORKS.md)
+[*] ✅ Updated README with quick start
+[*] ✅ Comprehensive changelog (LATEST_FIX.md)
+[*] ✅ Code quality report (CLEANUP_SUMMARY.md)
+[/list]
 
 [hr][/hr]
 
-[h2]📋 Requirements[/h2]
+[h1]📋 Requirements[/h1]
 
 This addon requires the following to function:
 [list]
-[*] [b]Star Trek Modules (Base)[/b] - Core framework
-[*] [b]Star Trek LCARS[/b] - Interface system
-[*] [b]Star Trek Replicator[/b] - Replication functionality
-[*] [b]Star Trek Utilities[/b] - Helper functions
+[*] [b]Garry's Mod[/b] - Latest version
+[*] [b]Star Trek Modules (Base)[/b] - REQUIRED
+[*] [b]Star Trek LCARS[/b] - REQUIRED
+[*] [b]Star Trek Replicator[/b] - REQUIRED
+[*] [b]Star Trek Utilities[/b] - REQUIRED
 [/list]
 
-[b]Make sure all dependencies are installed and loaded before this addon![/b]
+[b]⚠️ Make sure all dependencies are installed and loaded before this addon![/b]
 
 [hr][/hr]
 
-[h2]🛠️ Installation[/h2]
+[h1]🛠️ Installation[/h1]
 
 [olist]
-[*] Subscribe to this addon on the Steam Workshop
+[*] Subscribe to this addon on Steam Workshop
 [*] Subscribe to all required Star Trek Modules dependencies
-[*] Restart your server or type [b]lua_refresh[/b] in console
-[*] The Industrial Replicator will appear in your spawn menu under "Star Trek"
+[*] Restart your Garry's Mod server
+[*] Spawn "Industrial Replicator" from spawn menu (Star Trek category)
+[*] Start spawning items!
+[/olist]
+
+[b]Server Admins:[/b] Right-click the replicator to access management tools!
+
+[hr][/hr]
+
+[h1]💡 Tips & Tricks[/h1]
+
+[list]
+[*] [b]Custom Items Persist[/b] - All custom items save to database across server restarts
+[*] [b]Hide Default Items[/b] - Don't like certain items? Hide them without deleting!
+[*] [b]Unlimited Categories[/b] - Create custom categories for your server's specific needs
+[*] [b]Vehicle Auto-Detection[/b] - All GMod vehicle scripts automatically detected on server start
+[*] [b]Search Everything[/b] - Use search boxes in all panels to find items quickly
+[*] [b]Type Filters[/b] - Browse panel has filters: All Items, Vehicles Only, Chairs Only
+[*] [b]Back Buttons[/b] - Every panel has a back button - never get stuck!
+[*] [b]Status Indicators[/b] - See which items are visible or hidden in HIDE panel
+[*] [b]Dynamic Buttons[/b] - Buttons change text based on item state (Hide/Show)
+[*] [b]Documentation Included[/b] - 3000+ lines of documentation in addon files
+[/list]
+
+[hr][/hr]
+
+[h1]❓ FAQ[/h1]
+
+[b]Q: Can I add my own custom items?[/b]
+A: Yes! Use the ADD panel to add unlimited custom props, entities, weapons, vehicles, and chairs.
+
+[b]Q: Do custom items save after restart?[/b]
+A: Yes! All custom items are stored in SQLite database and persist across server restarts.
+
+[b]Q: Can I hide default items?[/b]
+A: Yes! The HIDE/SHOW panel works on both default (hardcoded) and custom items.
+
+[b]Q: Can vehicles be spawned?[/b]
+A: Yes! Browse 200+ GMod vehicles in the BROWSE panel and add them to your replicator.
+
+[b]Q: Does this work on dedicated servers?[/b]
+A: Yes! Fully compatible with dedicated servers and listen servers.
+
+[b]Q: Items not appearing?[/b]
+A: Check if they're hidden using the HIDE/SHOW panel. Verify database loaded in server console.
+
+[b]Q: How do I remove the replicator?[/b]
+A: Use physgun or remover tool like any other prop.
+
+[b]Q: Chair crashes the server?[/b]
+A: Fixed in v2.0! Chair detection prevents wheel attachment crashes automatically.
+
+[hr][/hr]
+
+[h1]🛠️ Technical Details[/h1]
+
+[b]Database:[/b] SQLite (built into GMod)
+[b]Tables:[/b] indrepprops2025, indreppcategories2025
+[b]Item Types:[/b] Props, Entities, Weapons, Vehicles, Chairs
+[b]Network Messages:[/b] 14 optimized messages
+[b]UI Framework:[/b] Derma/LCARS themed
+[b]Theme Color:[/b] Dark Gold Gaming #D6B140
+
+[b]Item Format Examples:[/b]
+[code]
+Prop:      models/props/chair.mdl
+Entity:    class:sent_ball
+Weapon:    class:weapon_pistol
+Vehicle:   vehicle:JeepStandard:models/buggy.mdl:scripts/vehicles/jeep_test.txt
+Chair:     prop_vehicle_prisoner_pod:models/chair.mdl
+[/code]
+
+[hr][/hr]
+
+[h1]🐛 Known Issues & Solutions[/h1]
+
+[b]Issue:[/b] "Vehicle has invalid wheel attachment" error
+[b]Solution:[/b] ✅ FIXED in v2.0! Chair detection system prevents this automatically.
+
+[b]Issue:[/b] Items not appearing in menu
+[b]Solution:[/b] Check HIDE/SHOW panel - item may be hidden. Unhide it or restart server.
+
+[b]Issue:[/b] Panels not opening
+[b]Solution:[/b] Check client console (F10) for errors. Ensure all files loaded. Restart server.
+
+[b]Issue:[/b] Database not saving
+[b]Solution:[/b] Check server console for SQL errors. Verify file permissions on sv.db.
+
+[hr][/hr]
+
+[h1]� Documentation[/h1]
+
+Comprehensive documentation included in addon files:
+[list]
+[*] [b]README.md[/b] - Quick start guide
+[*] [b]ADDON_DOCUMENTATION.md[/b] - Complete technical guide (500+ lines)
+[*] [b]HOW_IT_WORKS.md[/b] - Detailed system breakdown (900+ lines)
+[*] [b]LATEST_FIX.md[/b] - Changelog and recent updates
+[*] [b]CLEANUP_SUMMARY.md[/b] - Code quality report
+[/list]
+
+All documentation available after subscription!
+
+[hr][/hr]
+
+[h1]📝 Credits[/h1]
+
+[b]Original Framework:[/b]
+Jan 'Oninoni' Ziegler
+[list]
+[*] Star Trek Modules base system
+[*] LCARS interface framework
+[*] Replicator entity foundation
+[/list]
+
+[b]Enhanced Edition v2.0:[/b]
+Dark Gold Gaming Community
+[list]
+[*] Complete UI/UX overhaul
+[*] Vehicle system implementation
+[*] Database management tools
+[*] Comprehensive documentation
+[*] 15+ bug fixes and improvements
+[/list]
+
+[hr][/hr]
+
+[h1]📊 Statistics[/h1]
+
+[b]Lines of Code:[/b] ~3,500+
+[b]Documentation:[/b] ~3,000+ lines
+[b]Default Items:[/b] 50+
+[b]Management Panels:[/b] 6
+[b]Network Messages:[/b] 14
+[b]Item Types:[/b] 5 (Props, Entities, Weapons, Vehicles, Chairs)
+[b]Default Categories:[/b] 8
+
+[hr][/hr]
+
+[h1]⚖️ License[/h1]
+
+Copyright © 2022 Jan Ziegler
+
+This software can be used freely, but only distributed by the original author.
+
+Dark Gold Gaming enhancements provided as-is with permission to use on private servers.
+
+[hr][/hr]
+
+[h1]⭐ Support the Addon[/h1]
+
+If you enjoy this addon:
+[list]
+[*] ⭐ Rate it 5 stars
+[*] 👍 Give it a thumbs up
+[*] 💬 Leave a comment with feedback
+[*] 📤 Share with your server community
+[*] 🐛 Report bugs constructively with console logs
+[/list]
+
+[hr][/hr]
+
+[h1]🆘 Need Help?[/h1]
+
+[olist]
+[*] 📖 Read the documentation files in addon folder
+[*] 🔍 Check console (F10) for error messages
+[*] 💬 Leave a comment below with your issue
+[*] 🐛 Include server console errors in bug reports
+[*] 📋 Mention GMod version and other addons installed
 [/olist]
 
 [hr][/hr]
 
-[h2]💡 Tips & Tricks[/h2]
+[b]Made with ❤️ by the Star Trek Modules Community[/b]
 
-[list]
-[*] Place the replicator near your cargo bay or storage area
-[*] The 10-second cooldown prevents accidental spam clicks
-[*] Items spawn with transporter effects for authenticity
-[*] Replicated items are marked and can be detected by tricorders
-[*] Use the CLEAN function to quickly clear out unwanted replicated items
-[*] The recycler searches within 100 units of the replication point
-[*] Only replicated items can be recycled - regular props are safe
-[*] Works great for roleplay scenarios and server economies
-[/list]
+[b]Version 2.0 • Dark Gold Gaming Enhanced Edition • October 2025[/b]
 
-[hr][/hr]
-
-[h2]🐛 Known Issues[/h2]
-
-[list]
-[*] Replication coordinates are currently hardcoded - modify in entity files if needed
-[*] Some models may require specific content packs installed on your server
-[/list]
-
-[hr][/hr]
-
-[h2]📝 Credits[/h2]
-
-[list]
-[*] Created following the Star Trek Modules framework by [b]Jan 'Oninoni' Ziegler[/b]
-[*] Compatible with Star Trek Modules ecosystem
-[*] Uses LCARS interface standards
-[/list]
-
-[hr][/hr]
-
-[h2]📞 Support[/h2]
-
-If you encounter any issues or have suggestions:
-[list]
-[*] Post in the comments section below
-[*] Join the Star Trek Modules community
-[*] Check that all dependencies are up to date
-[/list]
-
-[hr][/hr]
-
-[h2]⚖️ License[/h2]
-
-This software can be used freely, but only distributed by the original author.
-Copyright © 2022 Jan Ziegler
-
-[hr][/hr]
-
-[b]Enjoy your Industrial Replicator and make it so! 🖖[/b]
+[b]Make it so! 🖖[/b]

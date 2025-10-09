@@ -1,5 +1,5 @@
 # 🖖 Star Trek Modules - Industrial Replicator
-### Dark Gold Nuaghty Bhop theme Enhanced Edition v2.0
+### Dark Gold Naughty Bhop theme Enhanced Edition v2.0
 
 [![License](https://img.shields.io/badge/License-Proprietary-orange.svg)](LICENSE)
 [![Garry's Mod](https://img.shields.io/badge/Garry's%20Mod-Addon-blue.svg)](https://store.steampowered.com/app/4000/Garrys_Mod/)
@@ -349,8 +349,9 @@ Please include:
 
 **Made with ❤️ by the Star Trek Modules Community &   TBN**
 
-**Version 2.0** | **Dark Gold Gaming Enhanced Edition based off Nuaghty bhop theming** | **October 2025**
+**Version 2.0** | **Dark Gold Gaming Enhanced Edition based off Naughty bhop theming** | **October 2025**
 
 [⬆ Back to Top](#-star-trek-modules---industrial-replicator)
+<img width="108" height="108" alt="image" src="https://github.com/user-attachments/assets/90160e1c-e939-4a45-a750-bde1724a1c17" />
 
 </div>

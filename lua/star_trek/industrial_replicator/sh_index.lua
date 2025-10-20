@@ -12,10 +12,6 @@
 ---------------------------------------
 ---------------------------------------
 
----------------------------------------
--- Star Trek Transport Relay | Loader--
----------------------------------------
-
 Star_Trek:RequireModules("util", "lcars", "replicator")
 
 Star_Trek.IndustrialReplicator = Star_Trek.IndustrialReplicator or {}

@@ -1,53 +1,52 @@
-[h1]Star Trek Modules - Industrial Replicator[/h1]
+Star Trek Modules - Industrial Replicator
 
-[b]A powerful industrial-scale replicator system with LCARS interface for your Star Trek server![/b]
+A powerful industrial-scale replicator system with LCARS interface for your Star Trek server!
 
-[hr][/hr]
 
-[h2]✨ New Feature: Custom Spawn Point Tool[/h2]
+
+✨ New Feature: Custom Spawn Point Tool
 
 You can now customize where replicated items spawn for each industrial replicator! No more items spawning in fixed locations - set the spawn point wherever you need it.
 
-[h3]How to Use:[/h3]
-[list]
-[*] [b]Equip the Tool:[/b] Open your toolgun (Q menu → Tools → ST:RP → "Ind Rep Spawn Point")
-[*] [b]Select a Replicator:[/b] Look at an industrial replicator and press [b]Reload (R)[/b] to select it
-[*] [b]Set Spawn Point:[/b] Aim where you want items to spawn and [b]Left Click[/b]
-[*] [b]Remove Custom Point:[/b] [b]Right Click[/b] to delete the custom spawn point and revert to default
-[/list]
+how to Use:
 
-[h3]Visual Feedback:[/h3]
+ Equip the Tool:  Open your toolgun (Q menu → Tools → ST:RP → "Ind Rep Spawn Point")
+ Select a Replicator:  Look at an industrial replicator and press [b]Reload (R)  to select it
+ Set Spawn Point:  Aim where you want items to spawn and [b]Left Click 
+ Remove Custom Point:  [b]Right Click  to delete the custom spawn point and revert to default
+ 
+
+ Visual Feedback: 
 When the tool is equipped, you'll see:
-[list]
-[*] [b]Red beam of light[/b] extending upward from each spawn point (5 vertical lines)
-[*] [b]Red ring[/b] at the top of the beam
-[*] [b]Yellow/orange arrow[/b] at ground level showing the direction items will face
-[*] [b]Selected replicator[/b] has brighter red beams and displays coordinate information
-[*] 3D text labels showing spawn point coordinates (X, Y, Z) and yaw angle
-[*] Preview sphere when aiming at new spawn locations
-[/list]
+ 
+ Red beam of light  extending upward from each spawn point (5 vertical lines)
+ Red ring  at the top of the beam
+ Yellow/orange arrow  at ground level showing the direction items will face
+ Selected replicator  has brighter red beams and displays coordinate information
+  3D text labels showing spawn point coordinates (X, Y, Z) and yaw angle
+  Preview sphere when aiming at new spawn locations
+ 
 
-[h3]Features:[/h3]
-[list]
-[*] [b]Persistent Storage:[/b] Spawn points are saved to a database and persist across server restarts
-[*] [b]Per-Replicator Settings:[/b] Each replicator can have its own custom spawn point
-[*] [b]Easy Reset:[/b] Right-click to remove custom settings and use the default spawn point
-[*] [b]Visual Markers:[/b] Red beam markers (similar to transport relay markers) make spawn points easy to see and adjust
-[*] [b]Direction Control:[/b] Items spawn facing the direction you were looking when you set the spawn point
-[/list]
+ Features: 
+ 
+ Persistent Storage:  Spawn points are saved to a database and persist across server restarts
+ Per-Replicator Settings:  Each replicator can have its own custom spawn point
+ Easy Reset:  Right-click to remove custom settings and use the default spawn point
+ Visual Markers:  Red beam markers (similar to transport relay markers) make spawn points easy to see and adjust
+ Direction Control:  Items spawn facing the direction you were looking when you set the spawn point
+ 
 
-[h3]Technical Details:[/h3]
-[list]
-[*] Spawn points stored in SQL database table `indrepspawnpoints2025`
-[*] Networked to all clients for real-time visual feedback
-[*] Automatic fallback to default if database unavailable
-[*] Compatible with all item types (props, vehicles, entities)
-[/list]
+ Technical Details: 
+ 
+  Spawn points stored in SQL database table `indrepspawnpoints2025`
+  Networked to all clients for real-time visual feedback
+  Automatic fallback to default if database unavailable
+  Compatible with all item types (props, vehicles, entities)
+ 
 
-[hr][/hr]
 
-[h2]Special Thanks[/h2]
-A huge thank you to [url=https://steamcommunity.com/profiles/76561198157344053]foodmonstersonmylawn[/url] for his ideas and feedback that inspired this update!
+Special Thanks
+A huge thank you to **foodmonstersonmylawn** for his ideas and feedback that inspired this update!
 
 
 

@@ -18,7 +18,7 @@ ENT.Type = "anim"
 ENT.Base = "base_gmodentity"
 
 ENT.PrintName = "Industrial Replicator"
-ENT.Author = "Oninoni"
+ENT.Author = "HouseOfPoe"
 ENT.IconOverride = "entities/industrial_replicator_entity_v3.png"
 
 ENT.Category = "Star Trek"

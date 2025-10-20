@@ -12,10 +12,6 @@
 ---------------------------------------
 ---------------------------------------
 
----------------------------------------
--- Star Trek Transport Relay | Loader--
----------------------------------------
-
 Star_Trek.IndustrialReplicator.Database = Star_Trek.IndustrialReplicator.Database or {}
 Star_Trek.IndustrialReplicator.Database.Initialized = false
 

@@ -12,10 +12,6 @@
 ---------------------------------------
 ---------------------------------------
 
----------------------------------------
--- Star Trek Transport Relay | Loader--
----------------------------------------
-
 if not istable(TOOL) then Star_Trek:LoadAllModules() return end
 
 TOOL.Category = "ST:RP"

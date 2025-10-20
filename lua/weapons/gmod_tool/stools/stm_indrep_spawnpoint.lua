@@ -1,8 +1,8 @@
 ---------------------------------------
 ---------------------------------------
---         Star Trek Modules         --
---                                   --
---            Created by             --
+--        made for Star Trek Module  --
+-- Addon Created by HouseofPoe.co.uk --
+--        API Created by             --
 --       Jan 'Oninoni' Ziegler       --
 --                                   --
 -- This software can be used freely, --
@@ -13,7 +13,7 @@
 ---------------------------------------
 
 ---------------------------------------
---  Ind Rep Spawn Point Tool | Tool  --
+-- Star Trek Transport Relay | Loader--
 ---------------------------------------
 
 if not istable(TOOL) then Star_Trek:LoadAllModules() return end

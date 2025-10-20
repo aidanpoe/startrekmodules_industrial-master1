@@ -60,8 +60,8 @@ function SELF:Open(ent)
 					end
 
 					-- Use fixed world position from the entity
-					local pos = ent.ReplicatePos
-					local ang = ent.ReplicateAng
+					local pos = ent:GetReplicatePos()
+					local ang = ent:GetReplicateAng()
 
 					local replicateSuccess, replicateError
 					
@@ -91,7 +91,7 @@ function SELF:Open(ent)
 			else
 				if categoryId == categoryCount + 1 then
 					-- Clean/Recycle replicated items
-					local pos = ent.ReplicatePos
+					local pos = ent:GetReplicatePos()
 					
 					local targets = ents.FindInSphere(pos, 100)
 					local cleanEntities = {}

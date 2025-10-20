@@ -28,9 +28,9 @@ include("shared.lua")
 resource.AddFile("materials/entities/industrial_replicator_entity_v3.vmt")
 resource.AddFile("materials/entities/industrial_replicator_entity_v3.vtf")
 
--- Fixed replication position from the request
-ENT.ReplicatePos = Vector(291.29, 61.04, 11714.17)
-ENT.ReplicateAng = Angle(0.02, 179.99, -0.00)
+-- Default replication position (fallback if no database entry exists)
+ENT.DefaultReplicatePos = Vector(291.29, 61.04, 11714.17)
+ENT.DefaultReplicateAng = Angle(0.02, 179.99, -0.00)
 
 function ENT:SpawnFunction(ply, tr, ClassName)
 	if not tr.Hit then return end
@@ -58,6 +58,63 @@ function ENT:Initialize()
 	if IsValid(phys) then
 		phys:EnableMotion(false)
 	end
+
+	-- Load spawn point from database or use default
+	self:LoadSpawnPoint()
+end
+
+-- Load the spawn point from database or use default
+function ENT:LoadSpawnPoint()
+	if Star_Trek.IndustrialReplicator.Database and Star_Trek.IndustrialReplicator.Database.Initialized then
+		local pos, ang = Star_Trek.IndustrialReplicator.Database:GetSpawnPoint(self:EntIndex())
+		
+		if pos and ang then
+			self:SetReplicatePos(pos)
+			self:SetReplicateAng(ang)
+		else
+			-- No database entry, use default
+			self:SetReplicatePos(self.DefaultReplicatePos)
+			self:SetReplicateAng(self.DefaultReplicateAng)
+		end
+	else
+		-- Database not available, use default
+		self:SetReplicatePos(self.DefaultReplicatePos)
+		self:SetReplicateAng(self.DefaultReplicateAng)
+	end
+end
+
+-- Update the spawn point and save to database
+function ENT:SetSpawnPoint(pos, ang)
+	self:SetReplicatePos(pos)
+	self:SetReplicateAng(ang)
+	
+	if Star_Trek.IndustrialReplicator.Database and Star_Trek.IndustrialReplicator.Database.Initialized then
+		local success, error = Star_Trek.IndustrialReplicator.Database:SetSpawnPoint(self:EntIndex(), pos, ang)
+		if not success then
+			ErrorNoHalt("[Industrial Replicator] Failed to save spawn point: " .. (error or "unknown error") .. "\n")
+			return false
+		end
+	end
+	
+	return true
+end
+
+-- Remove custom spawn point and revert to default
+function ENT:RemoveSpawnPoint()
+	-- Set back to defaults
+	self:SetReplicatePos(self.DefaultReplicatePos)
+	self:SetReplicateAng(self.DefaultReplicateAng)
+	
+	-- Remove from database
+	if Star_Trek.IndustrialReplicator.Database and Star_Trek.IndustrialReplicator.Database.Initialized then
+		local success, error = Star_Trek.IndustrialReplicator.Database:DeleteSpawnPoint(self:EntIndex())
+		if not success then
+			ErrorNoHalt("[Industrial Replicator] Failed to remove spawn point: " .. (error or "unknown error") .. "\n")
+			return false
+		end
+	end
+	
+	return true
 end
 
 function ENT:Use(ply)

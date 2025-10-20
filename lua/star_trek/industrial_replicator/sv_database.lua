@@ -77,6 +77,28 @@ function Star_Trek.IndustrialReplicator.Database:Initialize()
 		end
 	end
 
+	-- Create the spawn points table
+	local spawnQuery = [[
+		CREATE TABLE IF NOT EXISTS indrepspawnpoints2025 (
+			id INTEGER PRIMARY KEY AUTOINCREMENT,
+			entity_id INTEGER NOT NULL UNIQUE,
+			pos_x REAL NOT NULL,
+			pos_y REAL NOT NULL,
+			pos_z REAL NOT NULL,
+			ang_p REAL NOT NULL,
+			ang_y REAL NOT NULL,
+			ang_r REAL NOT NULL,
+			created_at INTEGER DEFAULT 0,
+			updated_at INTEGER DEFAULT 0
+		)
+	]]
+	
+	local spawnResult = sql.Query(spawnQuery)
+	if spawnResult == false then
+		ErrorNoHalt("[Industrial Replicator] Failed to create spawn points table: " .. sql.LastError() .. "\n")
+		return false
+	end
+
 	print("[Industrial Replicator] Database initialized successfully")
 	Star_Trek.IndustrialReplicator.Database.Initialized = true
 	return true
@@ -474,7 +496,109 @@ function Star_Trek.IndustrialReplicator.Database:IsItemHidden(itemPath, category
 	return false
 end
 
+-- Save or update a spawn point for a replicator entity
+-- @param entityId: The entity index
+-- @param pos: Vector position
+-- @param ang: Angle orientation
+-- @return success, error
+function Star_Trek.IndustrialReplicator.Database:SetSpawnPoint(entityId, pos, ang)
+	if not entityId or not pos or not ang then
+		return false, "Missing required parameters"
+	end
+
+	-- Check if spawn point already exists
+	local checkQuery = string.format(
+		"SELECT id FROM indrepspawnpoints2025 WHERE entity_id = %d",
+		entityId
+	)
+	local existing = sql.Query(checkQuery)
+
+	local timestamp = os.time()
+
+	if existing and #existing > 0 then
+		-- Update existing spawn point
+		local query = sql.Query(string.format(
+			"UPDATE indrepspawnpoints2025 SET pos_x = %f, pos_y = %f, pos_z = %f, ang_p = %f, ang_y = %f, ang_r = %f, updated_at = %d WHERE entity_id = %d",
+			pos.x, pos.y, pos.z,
+			ang.p, ang.y, ang.r,
+			timestamp,
+			entityId
+		))
+
+		if query == false then
+			return false, sql.LastError()
+		end
+	else
+		-- Insert new spawn point
+		local query = sql.Query(string.format(
+			"INSERT INTO indrepspawnpoints2025 (entity_id, pos_x, pos_y, pos_z, ang_p, ang_y, ang_r, created_at, updated_at) VALUES (%d, %f, %f, %f, %f, %f, %f, %d, %d)",
+			entityId,
+			pos.x, pos.y, pos.z,
+			ang.p, ang.y, ang.r,
+			timestamp, timestamp
+		))
+
+		if query == false then
+			return false, sql.LastError()
+		end
+	end
+
+	return true
+end
+
+-- Get the spawn point for a replicator entity
+-- @param entityId: The entity index
+-- @return pos (Vector), ang (Angle), or nil if not found
+function Star_Trek.IndustrialReplicator.Database:GetSpawnPoint(entityId)
+	if not entityId then
+		return nil, nil
+	end
+
+	local query = string.format(
+		"SELECT pos_x, pos_y, pos_z, ang_p, ang_y, ang_r FROM indrepspawnpoints2025 WHERE entity_id = %d",
+		entityId
+	)
+	
+	local result = sql.Query(query)
+
+	if result == false then
+		ErrorNoHalt("[Industrial Replicator] Failed to query spawn point: " .. sql.LastError() .. "\n")
+		return nil, nil
+	end
+
+	if not result or #result == 0 then
+		return nil, nil
+	end
+
+	local data = result[1]
+	local pos = Vector(tonumber(data.pos_x), tonumber(data.pos_y), tonumber(data.pos_z))
+	local ang = Angle(tonumber(data.ang_p), tonumber(data.ang_y), tonumber(data.ang_r))
+
+	return pos, ang
+end
+
+-- Delete the spawn point for a replicator entity
+-- @param entityId: The entity index
+-- @return success, error
+function Star_Trek.IndustrialReplicator.Database:DeleteSpawnPoint(entityId)
+	if not entityId then
+		return false, "Missing entity ID"
+	end
+
+	local query = sql.Query(string.format(
+		"DELETE FROM indrepspawnpoints2025 WHERE entity_id = %d",
+		entityId
+	))
+
+	if query == false then
+		return false, sql.LastError()
+	end
+
+	return true
+end
+
 -- Initialize the database on load
 hook.Add("Initialize", "Star_Trek.IndustrialReplicator.InitDatabase", function()
 	Star_Trek.IndustrialReplicator.Database:Initialize()
 end)
+

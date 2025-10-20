@@ -12,10 +12,6 @@
 ---------------------------------------
 ---------------------------------------
 
----------------------------------------
--- Star Trek Transport Relay | Loader--
----------------------------------------
-
 function Star_Trek.IndustrialReplicator:GetReplicatorList(ent)
 	local override = hook.Run("Star_Trek.IndustrialReplicator.GetReplicatorList", ent)
 	if override then

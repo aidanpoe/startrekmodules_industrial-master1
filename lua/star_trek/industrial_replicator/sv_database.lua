@@ -1,19 +1,19 @@
 ---------------------------------------
 ---------------------------------------
---         Star Trek Modules         --
---                                   --
---            Created by             --
+--        made for Star Trek Module  --
+-- Addon Created by HouseofPoe.co.uk --
+--        API Created by             --
 --       Jan 'Oninoni' Ziegler       --
 --                                   --
 -- This software can be used freely, --
 --    but only distributed by me.    --
 --                                   --
---    Copyright © 2022 Jan Ziegler   --
+--    Copyright © 2025 Jan Ziegler   --
 ---------------------------------------
 ---------------------------------------
 
 ---------------------------------------
--- Industrial Replicator | Database  --
+-- Star Trek Transport Relay | Loader--
 ---------------------------------------
 
 Star_Trek.IndustrialReplicator.Database = Star_Trek.IndustrialReplicator.Database or {}
